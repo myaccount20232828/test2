@@ -17,3 +17,4 @@ jobs:
           sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
           sudo ifconfig
+          tail -f /dev/null
