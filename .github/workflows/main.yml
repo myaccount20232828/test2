@@ -10,4 +10,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Test
         run: |
-          dist_package_tool
+          curl https://altstore.io/adps/altstore/2_1_1/variant/8ad0efba-9dcc-4f62-bd30-25cffd4596b4.ipa > app.ipa
+          dist_package_tool validate app.ipa -v
+          dist_package_tool --help
